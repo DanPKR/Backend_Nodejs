@@ -17,5 +17,12 @@ app.get('/test',(req,res) => {
     });
 });
 
+app.post('/postest',(req,res) => {
+    console.log('/postest: ',req.body.msg)
+    res.status(200).send({
+        message : "que pedo puto"
+    });
+});
+
 // exportar
 module.exports = app;
